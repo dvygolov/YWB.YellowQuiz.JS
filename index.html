@@ -1,0 +1,97 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="ywbquiz.css"/>
+</head>
+<body>
+    <script src="ywbquiz.js"></script>
+    <script>
+        initQuiz({
+            divId: "quiz",
+            quizColor: "ffffff",
+            answersColor: "aabbaa",
+            questions: [
+                {
+                    title: "Please, pass our simple quiz",
+                    subtitle: "Please, please, please!!!",
+                    image: "flags/es.png",
+                    answers: [{ text: "Start" }],
+                    alignAnswers: "horizontal"
+                },
+                {
+                    title: "Where are you from?",
+                    answers: [{ text: "Spain", image: "flags/es.png" }, { text: "Italy", image: "flags/it.png" }, { text: "Portugal", image: "flags/pt.png" }],
+                    alignAnswers: "horizontal"
+                },
+                {
+                    title: "Second question",
+                    answers: [{ text: "Yes" }, { text: "No"}],
+                    alignAnswers: "vertical"
+                },
+                {
+                    title: "Thank you!",
+                    subtitle: "Read the text futher on",
+                    image: "flags/ru.png"
+                }
+            ]
+        });
+    </script>
+    <div id="quiz"></div>
+    <!--<div class="quizcontainer">
+        <div class="question">Start our beautiful quiz!</div>
+        <div class="subtitle">We need to know your opinion, guys.</div>
+        <img src="flags/ru.png"/>
+        <ul class="answers">
+            <li>
+                <a href="https://twitter.com/">
+                    Start
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="quizcontainer">
+        <div class="question">Where are you from?</div>
+        <ul class="answers">
+            <li>
+                <a href="https://twitter.com/">
+                    <img src="flags/it.png" />
+                    Italy
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/">
+                    <img src="flags/es.png" />
+                    Spain
+                </a>
+            </li>
+            <li>
+                <a href="https://instagram.com">
+                    <img src="flags/pt.png" />
+                    Portugal
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="quizcontainer">
+        <div class="question">Where are you from?</div>
+        <ul class="answers">
+            <li>
+                <a href="https://twitter.com/">
+                    This is my best answer to this question
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/">
+                    This is my best answer to this question
+                </a>
+            </li>
+            <li>
+                <a href="https://instagram.com">
+                    This is my best answer to this question
+                </a>
+            </li>
+        </ul>
+    </div>
+        -->
+</body>
+</html>
