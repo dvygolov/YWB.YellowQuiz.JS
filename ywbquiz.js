@@ -6,6 +6,7 @@ function initQuiz(params) {
         for (let i = 0; i < params.questions.length; i++) {
             var qScreen = document.createElement('div');
             qScreen.className = 'quizcontainer';
+            if (params.quizColor !== undefined) qScreen.style = 'background-color:' + params.quizColor;
 
             var title = document.createElement('div');
             title.className = 'question';
@@ -38,6 +39,7 @@ function initQuiz(params) {
                     var answer = params.questions[i].answers[j];
 
                     var li = document.createElement('li');
+                    if (params.answersColor !== undefined) li.style = 'background-color:' + params.answersColor;
                     var aButton = document.createElement('a');
                     aButton.onclick = () => moveToNextScreen(mainQuizElement, quizElements, i+1);
 
